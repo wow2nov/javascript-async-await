@@ -33,12 +33,15 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
-getJohnProfile()
-.then(function(profile){
-  console.log(profile);
-  return getJohnOrders();
-})
+async function johnProfile(){
+  const data = await getJohnProfile();
+  console.log(data);
+};
 
-.then(function(orders){
-  console.log(orders);
-});
+async function johnOrders(){
+  const dataOrder = await getJohnProfile();
+  console.log(dataOrder);
+};
+
+johnProfile();
+johnOrders();

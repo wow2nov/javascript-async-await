@@ -14,6 +14,9 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
-getJohnProfile().then(function (profile) {
-  console.log(profile);
+getJohnProfile().then(function(data) {
+  console.log(data);
 });
+
+
+
