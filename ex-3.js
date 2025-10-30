@@ -33,3 +33,11 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+getJohnProfile()
+.then((profile) => {console.log(profile)})
+.catch((error) => {console.log("Error", error)});
+
+getJohnOrders()
+.then((profile) => {console.log(profile)})
+.catch((error) => {console.log("Error", error)})
+
